@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+  <script src="http://d3js.org/topojson.v1.min.js"></script>
+
+  </head>
+  <style>
+      * {
+        font-size: 0.85em;
+      }
+      p {
+        font-size: 0.85em;
+      }
+
+/*      .state {
+        fill: none;
+        stroke: #333;
+        stroke-width: 0.5;
+      }*/
+
+      .county {
+        fill: rgba(255,255,255, .1);
+        stroke: #333;
+     /*   stroke: #fff;*/
+        stroke-width: 0.5;
+      }
+
+      .tooltip {
+        background-color: white;
+        position: absolute;
+        height: auto;
+        padding: 10px;
+        -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+        pointer-events: none;
+        text-align:left;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        width:150px;
+        margin-left: -108px;
+        margin-top: 5px;
+        }
+
+    </style>
+</head>
+<body>
+  <div class=container>
+    <div class="row">
+      <div class="offset-1 col-10">
+    <div id="map"></div>
+  </div>
+  </div>
+</div>
+
+<script src="visualization.js"></script>
+</body>
+</html>
